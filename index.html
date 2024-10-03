@@ -1,278 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S87YSBFKVG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-S87YSBFKVG');
-    </script>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Zero-to-Hero.">
+  <meta name="keywords" content="zero-to-hero">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zero-to-Hero</title>
 
-    <!-- <link rel="icon" href="./resources/LITLAB - logo.png"> -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zero-to-Hero</title>
-    <style>
-        body {
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            font-weight: 300;
-            font-size: 18px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 1100px;
-        }
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S87YSBFKVG"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-S87YSBFKVG');
+  </script>
 
-        .topnav {
-            background-color: #eeeeee;
-            overflow: hidden;
-        }
 
-        .topnav div {
-            max-width: 1070px;
-            margin: 0 auto;
-        }
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
 
-        .topnav a {
-            display: inline-block;
-            color: black;
-            text-align: center;
-            vertical-align: middle;
-            padding: 16px 16px;
-            text-decoration: none;
-            font-size: 16px;
-        }
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+  <link rel="icon" href="./static/images/superhero-svgrepo-com (1).svg">
 
-        .topnav img {
-            width: 100%;
-            margin: 0.2em 0px 0.3em 0px;
-        }
-
-        .venue {
-            color: black;
-            text-align: center;
-        }
-
-        #bibtex pre {
-            font-size: 14px;
-            background-color: #eee;
-            padding: 16px;
-        }
-
-        h1 {
-            font-weight: 300;
-            margin: 0.4em;
-        }
-
-        p {
-            margin: 0.2em;
-        }
-
-        .disclaimerbox {
-            background-color: #eee;
-            border: 1px solid #eeeeee;
-            border-radius: 10px;
-            padding: 20px;
-        }
-
-        video.header-vid,
-        img.header-img {
-            height: 140px;
-            border: 1px solid black;
-            border-radius: 10px;
-        }
-
-        img.rounded {
-            border: 1px solid #eeeeee;
-            border-radius: 10px;
-        }
-
-        .paper-btn {
-            position: relative;
-            text-align: center;
-            display: inline-block;
-            margin: 12px;
-            padding: 8px 8px;
-            border-width: 0;
-            outline: none;
-            border-radius: 2px;
-            background-color: #76B900;
-            color: black !important;
-            font-size: 20px;
-            width: 150px;
-            font-weight: 600;
-        }
-
-        .paper-btn-parent {
-            display: flex;
-            justify-content: center;
-            margin: 16px 0px;
-        }
-
-        .paper-btn:hover {
-            opacity: 0.85;
-        }
-
-        .material-icons {
-            vertical-align: -6px;
-        }
-
-        td.dl-link {
-            height: 160px;
-            text-align: center;
-            font-size: 22px;
-        }
-
-        .layered-paper-big {
-            box-shadow:
-                0px 0px 1px 1px rgba(0, 0, 0, 0.35),
-                5px 5px 0 0px #fff,
-                5px 5px 1px 1px rgba(0, 0, 0, 0.35),
-                10px 10px 0 0px #fff,
-                10px 10px 1px 1px rgba(0, 0, 0, 0.35),
-                15px 15px 0 0px #fff,
-                15px 15px 1px 1px rgba(0, 0, 0, 0.35),
-                20px 20px 0 0px #fff,
-                20px 20px 1px 1px rgba(0, 0, 0, 0.35),
-                25px 25px 0 0px #fff,
-                25px 25px 1px 1px rgba(0, 0, 0, 0.35);
-            margin-left: 10px;
-            margin-right: 45px;
-        }
-
-        .layered-paper {
-            box-shadow:
-                0px 0px 1px 1px rgba(0, 0, 0, 0.35),
-                5px 5px 0 0px #fff,
-                5px 5px 1px 1px rgba(0, 0, 0, 0.35),
-                10px 10px 0 0px #fff,
-                10px 10px 1px 1px rgba(0, 0, 0, 0.35);
-            margin-top: 5px;
-            margin-left: 10px;
-            margin-right: 30px;
-            margin-bottom: 5px;
-        }
-
-        .vert-cent {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        hr {
-            margin: 0;
-            border: 0;
-            height: 1.5px;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-        }
-
-        .rainbow-text {
-            font-size: 40px;
-            background-image: linear-gradient(to left, black, green 50%, #00FF00 100%);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-
-        .heroic-text {
-            font-size: 40px;
-            background: linear-gradient(to right, red, gold, blue);
-            -webkit-background-clip: text;
-            color: transparent;
-            font-weight: bold;
-        }
-    </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
-
 <body>
-    <div class="topnav" id="myTopnav">
-        <div>
-            <a href="https://orlitany.github.io/" style="display: flex; align-items: center; text-decoration: none; padding: 0; margin: 0;">
-                <img style="width: 5%; margin: 0 5px 0 0; padding: 0;" src="resources/LITLAB - logo.png" />
-                <strong style="margin: 0; padding: 0;">Lit-Lab @ Technion CS</strong>
-            </a>
-        </div>
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-    <br>
-    <center>
-        <span class="heroic-text">Zero-to-Hero: </span>
-        <span style="font-size:40px">Enhancing Zero-Shot Novel View Synthesis via Attention Map Filtering</span>
-    </center>
-    <br>
-    <table align="center" width="700px">
-        <tr>
-            <td align="center" width="100px">
-                <center>
-                    <span style="font-size:20px"><a href="">Ido Sobol</a><sup>1</sup></span>
-                </center>
-            </td>
-            <td align="center" width="100px">
-                <center>
-                    <span style="font-size:20px"><a href="https://chenfengx.com/">Chenfeng Xu </a><sup>2</sup></span>
-                </center>
-            </td>
-            <td align="center" width="100px">
-                <center>
-                    <span style="font-size:20px"><a href="https://orlitany.github.io/">Or Litany </a><sup>1,3</sup></span>
-                </center>
-            </td>
-        </tr>
-    </table>
-    <br>
-    <table align="center" width="900px">
-        <tr>
-            <td align="center" width="100px" style="padding-right: 20px;">
-                <center>
-                    <span style="font-size:20px"><sup>1</sup>Technion</span>
-                </center>
-            </td>
-            <td align="center" width="100px" style="padding-right: 20px;">
-                <center>
-                    <span style="font-size:20px"><sup>2</sup>UC Berkeley</span>
-                </center>
-            </td>
-            <td align="center" width="100px">
-                <center>
-                    <span style="font-size:20px"><sup>3</sup>NVIDIA</span>
-                </center>
-            </td>
-        </tr>
-    </table>
-    <br>
-    <center>
-        <div class="paper-btn-parent">
-            <a class="paper-btn" href="https://arxiv.org/abs/2405.18677">
-                <span class="material-icons">description</span>
-                Arxiv
-            </a>
-            <a class="paper-btn" href="./resources/sobol20243zero2hero.bib">
-                <span class="material-icons">description</span>
-                BibTex
-            </a>
-            <a class="paper-btn" href="">
-                <span class="material-icons">description</span>
-                Code (coming up)
-            </a>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://orlitany.github.io/">
+        <!-- <span class="icon"> -->
+          <img src="./static/images/LITLAB - logo.png"
+                 class=""
+                 alt="Home"/>LIT-Lab
+            <!-- <i class="fas fa-home"></i> -->
+        <!-- </span> -->
+        </a>        
+  
+        
+      </div>
+  
+    </div>
+  </nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Zero-to-Hero: Enhancing Zero-Shot Novel View Synthesis via Attention Map Filtering</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Ido Sobol</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://chenfengx.com/">Chenfeng Xu </a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://orlitany.github.io/">Or Litany </a><sup>1,3</sup>,
+            </span>            
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Technion,</span>
+            <span class="author-block"><sup>2</sup>UC Berkeley,</span>
+            <span class="author-block"><sup>3</sup>NVIDIA</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2405.18677"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>              
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                  </a>
+              </span>              
+            </div>
+
+          </div>
         </div>
-    </center>
-    <hr>
-    <hr>
-    <table align="center" width="1100px">
-        <tr>
-            <td>
-                <img src="./resources/teaser.png" width="1100px"></img>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <center>
-                    <h1>Abstract</h1>
-                </center>
-                <center>
-                    <span style="font-size:15px;font-style:italic">
-                        Generating realistic images from arbitrary views based on a single source image remains a
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+      <h2 class="subtitle has-text-centered">
+        We introduce Zero-to-Hero, a test-time filtering method for attention maps that significantly enhances image-conditioned diffusion models. 
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/controlnet_final.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+      <h2 class="subtitle has-text-centered">
+        Our method, focused on single-image novel view synthesis, not only outperforms strong baselines but also proves to be highly applicable to other tasks, including multi-view generation, and pose- and segmentation-conditioned text-to-image synthesis. 
+      </h2>
+    </div>
+  </div>
+</section>
+
+<br><br>
+
+<section class="section"></section>
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Generating realistic images from arbitrary views based on a single source image remains a
                         significant challenge in computer vision, with broad applications ranging from e-commerce to
                         immersive virtual experiences. Recent advancements in diffusion models, particularly the Zero-1-to-3
                         model, have been widely adopted for generating plausible views, videos, and 3D models. However,
@@ -287,14 +180,133 @@
                         These processes are further supported by a specialized sampling schedule. Experimental results
                         demonstrate substantial improvements in fidelity and consistency, validated on a diverse set of
                         out-of-distribution objects.
-                    </span>
-                </center>
-            </td>
-        </tr>
-    </table>
-    <br>
-    <hr>
-    <hr>
-</body>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
 
+
+<section class="section"></section>
+<div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">  
+    <h3 class="title is-4">Attention Maps Need Denoising Too!</h3>  
+  </div>
+  <p>
+  Attention layers are critical in shaping the structure and appearance of generated images. Noise present in the latent induces attention map noise that accumulates throughout the denoising process, resulting in visual artifacts.
+  </p>
+  <br>
+  <p>Which Attention Maps Should we Denoise? (Spoiler: Self-Attention).</p>
+        <p>The single embedding condition in the cross-attention of Zero-1-to-3 results in a single key-value pair. Consequently, the Softmax degenerates the scores to an all-ones matrix, losing spatial awareness.</p>
+
+  <div class="hero-body">
+    <img src="./static/images/cross_att_fig.png"
+               class="interpolation-image"
+               alt="Interpolate start reference image."/>             
+      
+      
+  </div>
+</div>
+
+
+
+
+
+<section class="hero teaser"></section>
+<div class="container is-max-desktop">
+<div class="columns is-centered has-text-centered">  
+  <h3 class="title is-4">Introducing: Attention Maps Filtering</h3>    
+</div>
+<p>Robustifying attention maps can reduce generation artifacts. Inspired by gradient aggregation and weight averaging in SGD, we view the denoising as an unrolled optimization, with attention maps as parameters in a score prediction model.</p>
+
+
+    <div class="hero-body">
+      <img src="./static/images/analogy.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>             
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <p>We collect a set of attention maps for each timestep through resampling, then aggregate the maps both within and across timesteps to refine the predictions. This process is training-free, resulting in more accurate maps and a more faithful generation.
+    </p>
+    <div class="hero-body">
+      <img src="./static/images/att_fig.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>                    
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser"></section>
+<div class="container is-max-desktop">
+<div class="columns is-centered has-text-centered">  
+  <h3 class="title is-4">Enforcing Appearance Consistency Between Source and Target Views</h3>    
+</div>
+<p>Using "Mutual Self-Attention" during early stages of denoising,  we propagate information from the input to the generated view. Our entire pipeline is shown in the figure.</p>
+
+
+    <div class="hero-body">
+      <img src="./static/images/method_short_no_sections.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>               
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser"></section>
+<div class="container is-max-desktop">
+<div class="columns is-centered has-text-centered">  
+  <h3 class="title is-4">Zero-to-Hero is a Universal Generation Enhancement Tool 🔨</h3>    
+</div>
+<p>We implemented Zero-to-Hero on three tasks: image generation conditioned on (1) pose and (2) segmentation maps, as well as (3) multiview generation. In all cases we achieve a significant performance boost.</p>
+
+
+    <div class="hero-body">
+      <img src="./static/images/mvdream.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>                
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{sobol2024zero2hero,
+  author={Ido Sobol and Chenfeng Xu and Or Litany},
+  title     = {Zero-to-Hero: Enhancing Zero-Shot Novel View Synthesis via Attention Map Filtering},
+  journal   = {NeurIPS},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          
+        <p>
+            Website source based on <a href="https://github.com/nerfies/nerfies.github.io">this source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
